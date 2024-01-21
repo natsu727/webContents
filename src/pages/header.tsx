@@ -1,5 +1,40 @@
+import { usePathname } from "next/navigation"
+import { useEffect, useState } from "react"
 
 export default function Header(){
+    const pathName = usePathname();
+    console.log(pathName);
+    const selected :string = "font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600";
+    const unselected :string ="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"; 
+    // const checkPath=(text:string)=>{
+    //     if(text == pathName){
+    //         return "font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600";
+    //     }
+    //     else{
+    //         return "font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600";
+    //     }
+    // }
+    let state_home =unselected;
+    let state_news =unselected;
+    let state_search =unselected;
+
+    useEffect(()=>{
+        switch(pathName){
+            case "/#":
+                state_home = selected;
+                break;
+            case "/news_pages":
+                state_news = selected;
+                break;
+            case "/search":
+                state_search = selected;
+                break;
+            default:
+                break;
+
+        }
+    },[pathName])
+
     return(
         <>
         <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
@@ -15,10 +50,9 @@ export default function Header(){
             </div>
             <div id="navbar-with-collapse" className="hidden basis-full grow sm:block">
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                <a className="font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-current="page">Landing</a>
-                <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Account</a>
-                <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Work</a>
-                <a className="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Blog</a>
+                <a className={state_home} href="./#" aria-current="page">Home</a>
+                <a className={state_news} href="#">News</a>
+                <a className={state_search} href="#">Search</a>
             </div>
             </div>
         </nav>

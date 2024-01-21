@@ -10,16 +10,16 @@ export default function Hello(){
           <path d="M96 0V47L48 94H0V47L48 0H96Z" />
         </svg>
 
-        Librery
+        Libreries
       </a>
       {/* <!-- logo - end --> */}
 
       {/* <!-- nav - start --> */}
       <nav className="hidden gap-12 lg:flex 2xl:ml-16">
         <a href="#" className="text-lg font-semibold text-indigo-500">Home</a>
-        <a href="./news_pages" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Collections</a>
-        <a href="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Sale</a>
-        <a href="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">About</a>
+        <a href="./news_pages" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">News</a>
+        <a href="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Search</a>
+        {/* <a href="#" className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">MyPage</a> */}
       </nav>
       {/* <!-- nav - end --> */}
 
@@ -64,7 +64,7 @@ export default function Hello(){
   <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
     <div className="mb-8 flex flex-wrap justify-between md:mb-16">
       <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
-        <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">Find your<br />style online</h1>
+        <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">Shear your<br />Book shelf</h1>
 
         <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
       </div>

@@ -1,7 +1,7 @@
 
 export default function Footer(){
     return(
-      <div className="bg-white pt-4 sm:pt-10 lg:pt-12">
+      <div className=" bg-white pt-4 sm:pt-10 lg:pt-12 bg-bottom">
       <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <div className="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
           {/* <!-- nav - start --> */}
@@ -42,8 +42,6 @@ export default function Footer(){
           </div>
           {/* <!-- social - end --> */}
         </div>
-    
-        <div className="py-8 text-center text-sm text-gray-400">© 2021 - Present Flowrift. All rights reserved.</div>
       </footer>
     </div>
     )
