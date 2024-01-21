@@ -6,11 +6,10 @@ export default function Footer(){
         <div className="flex flex-col items-center justify-between gap-4 border-t border-b py-6 md:flex-row">
           {/* <!-- nav - start --> */}
           <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-            <a href="#" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</a>
-            <a href="#" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Investor Relations</a>
-            <a href="#" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Jobs</a>
-            <a href="#" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Press</a>
-            <a href="#" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</a>
+            <a href="./#" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Home</a>
+            <a href="./news_pages" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">News</a>
+            <a href="./faq" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
+            <a href="./mypage" className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Login</a>
           </nav>
           {/* <!-- nav - end --> */}
     

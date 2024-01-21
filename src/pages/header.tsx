@@ -1,39 +1,13 @@
 import { usePathname } from "next/navigation"
 import { useEffect, useState } from "react"
 
-export default function Header(){
-    const pathName = usePathname();
-    console.log(pathName);
+export default function Header(props:any){
     const selected :string = "font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600";
     const unselected :string ="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"; 
-    // const checkPath=(text:string)=>{
-    //     if(text == pathName){
-    //         return "font-medium text-blue-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600";
-    //     }
-    //     else{
-    //         return "font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600";
-    //     }
-    // }
-    let state_home =unselected;
-    let state_news =unselected;
-    let state_search =unselected;
-
-    useEffect(()=>{
-        switch(pathName){
-            case "/#":
-                state_home = selected;
-                break;
-            case "/news_pages":
-                state_news = selected;
-                break;
-            case "/search":
-                state_search = selected;
-                break;
-            default:
-                break;
-
-        }
-    },[pathName])
+    let state_home = props.page==="#"?selected:unselected;
+    let state_news =props.page==="news"?selected:unselected;
+    let state_search =props.page==="faq"?selected:unselected;
+    let state_cart =props.page==="cart"?selected:unselected;
 
     return(
         <>
@@ -51,8 +25,9 @@ export default function Header(){
             <div id="navbar-with-collapse" className="hidden basis-full grow sm:block">
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
                 <a className={state_home} href="./#" aria-current="page">Home</a>
-                <a className={state_news} href="#">News</a>
-                <a className={state_search} href="#">Search</a>
+                <a className={state_news} href="./news_pages">News</a>
+                <a className={state_search} href="./faq">FAQ</a>
+                <a className={state_cart} href="./mypage">Login</a>
             </div>
             </div>
         </nav>
