@@ -1,13 +1,10 @@
 import Footer from "./footer"
-import Hello from "./hello"
 import News from "./news"
-import Pop from "./pop"
-
-export default function Home() {
+import Header from "./header"
+export default function News_Page() {
   return (
     <>
-      <Hello/>
-      <Pop/>
+      <Header/>
       <News/>
       <Footer/>
     </>
