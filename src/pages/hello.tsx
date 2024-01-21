@@ -74,7 +74,7 @@ export default function Hello(){
       <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
         <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">Shear your<br />Book shelf</h1>
 
-        <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares characteristics of real text.</p>
+        <p className="max-w-md leading-relaxed text-gray-500 xl:text-lg">興味のあるコンテンツを保存・管理・共有しよう！！</p>
       </div>
 
       <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
