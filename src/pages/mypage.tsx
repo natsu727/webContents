@@ -4,10 +4,10 @@ import Header from "./header"
 
 export default function Login() {
     return (
-      <div className="flex flex-col min-h-screen bg-white ">
+      <div className=" bg-green-50 flex flex-col min-h-screen ">
           <Header page="cart" />
         <CartBody/>
-        <div className="bottom-0 w-full  text-white p-4">
+        <div className="bottom-0 w-full  text-white">
         <Footer />
         </div>
       </div>

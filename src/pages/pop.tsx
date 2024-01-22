@@ -1,9 +1,9 @@
 
 export default function Pop(){
     return(
-        <div className="bg-white py-6 sm:py-8 lg:py-12">
+        <div className=" py-6 sm:py-8 lg:py-12">
   <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-    <div className="flex flex-col overflow-hidden rounded-lg bg-gray-900 sm:flex-row md:h-80">
+    <div className="flex flex-col overflow-hidden rounded-lg bg-purple-900 sm:flex-row md:h-80">
       {/* <!-- content - start --> */}
       <div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-2/5">
         <h2 className="mb-4 text-xl font-bold text-white md:text-2xl lg:text-4xl">How to Use This Site !!</h2>
@@ -11,7 +11,7 @@ export default function Pop(){
         <p className="mb-8 max-w-md text-gray-400">このサイトの利用方法を紹介</p>
 
         <div className="mt-auto">
-          <a href="#" className="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">Start now</a>
+          <a href="./how_use" className="inline-block rounded-lg bg-white px-8 py-3 text-center text-sm font-semibold text-purple-800 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">Start now</a>
         </div>
       </div>
       {/* <!-- content - end --> */}

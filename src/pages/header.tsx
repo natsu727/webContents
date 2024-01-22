@@ -11,11 +11,11 @@ export default function Header(props:any){
 
     return(
         <>
-        <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
+        <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-gradient-to-t from-green-100 to-green-500 text-sm py-4 ">
         <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
             <div className="flex items-center justify-between">
-            <a className="inline-flex text-xl font-semibold dark:text-white" href="#">
-            <svg width="95" height="94" viewBox="0 0 95 94" className="h-auto w-6 text-indigo-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <a className="inline-flex text-xl font-semibold text-purple-800" href="./#">
+            <svg width="95" height="94" viewBox="0 0 95 94" className="h-auto w-6 text-orange-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M96 0V47L48 94H0V47L48 0H96Z" />
             </svg>
             Libraries</a>

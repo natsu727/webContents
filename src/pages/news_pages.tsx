@@ -4,7 +4,7 @@ import Header from "./header"
 
 export default function News_Page() {
     return (
-      <div className="flex flex-col min-h-screen bg-white">
+      <div className=" bg-green-50 flex flex-col min-h-screen bg-white">
           <Header page="news" />
         <div id="root" className="flex-1 object-center">
         {/* <h1 className=" relative text-black left-1/4 font-italic text-6xl top-10">News</h1> */}
