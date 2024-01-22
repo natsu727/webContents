@@ -12,9 +12,9 @@ export default function Hello(){
     <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-4 md:px-8">
       {/* <!-- logo - start --> */}
       <a href="/" className="inline-flex items-center gap-2.5 text-2xl font-bold text-purple-800 md:text-3xl" aria-label="logo">
-        <svg width="95" height="94" viewBox="0 0 95 94" className="h-auto w-6 text-orange-400" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-        </svg>
+        {/* <svg width="95" height="94" viewBox="0 0 95 94" className="h-auto w-6 text-orange-400" fill="currentColor" xmlns=""> */}
+          <img className=" w-10 " src="本の無料アイコン素材4.svg"></img>
+        {/* </svg> */}
 
         Libreries
       </a>

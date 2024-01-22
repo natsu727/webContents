@@ -15,9 +15,11 @@ export default function Header(props:any){
         <nav className="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
             <div className="flex items-center justify-between">
             <a className="inline-flex text-xl font-semibold text-purple-800" href="./#">
-            <svg width="95" height="94" viewBox="0 0 95 94" className="h-auto w-6 text-orange-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            {/* <svg width="95" height="94" viewBox="0 0 95 94" className="h-auto w-6 text-orange-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M96 0V47L48 94H0V47L48 0H96Z" />
-            </svg>
+            </svg> */}
+            <img className=" w-6 " src="本の無料アイコン素材4.svg"></img>
+
             Libraries</a>
             <div className="sm:hidden">
                 <button type="button" className="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-gray-700 dark:text-white dark:hover:bg-white/10 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-collapse="#navbar-with-collapse" aria-controls="navbar-with-collapse" aria-label="Toggle navigation">
