@@ -10,7 +10,7 @@ export default function News_Page() {
         {/* <h1 className=" relative text-black left-1/4 font-italic text-6xl top-10">News</h1> */}
         <News/>
         </div>
-        <div className="bottom-0 w-full  text-white p-4">
+        <div className="bottom-0 w-full  text-white">
         <Footer />
         </div>
       </div>

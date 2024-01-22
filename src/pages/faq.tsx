@@ -7,7 +7,7 @@ export default function Faq() {
       <div className=" bg-green-50 flex flex-col min-h-screen bg-white ">
           <Header page="faq" />
         <FaqBody/>
-        <div className=" bottom-0 w-full  text-white p-4">
+        <div className=" bottom-0 w-full  text-white">
         <Footer />
         </div>
       </div>
